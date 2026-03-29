@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create vite@latest frontend -- --template react-ts)",
+      "Bash(npm install react-markdown remark-gfm rehype-highlight mermaid markmap-view markmap-lib lucide-react)",
+      "Bash(npm install -D tailwindcss@3 daisyui@4 postcss autoprefixer)",
+      "Bash(npm install @marp-team/marp-core path-browserify)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(npm run build)",
+      "Bash(npm install @rolldown/binding-win32-x64-msvc)",
+      "Bash(npm install lightningcss-win32-x64-msvc)",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_press_key",
+      "mcp__playwright__browser_file_upload",
+      "Bash(pip install -r requirements-dev.txt -q)",
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(npm install)",
+      "Bash(npm install --save-dev ts-node source-map-support @types/node)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx cdk synth)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill /PID 438292 /F)",
+      "Bash(cmd //c \"taskkill /PID 438292 /F\")",
+      "Bash(npx tailwindcss --help)",
+      "Bash(python3 -c \"import json,sys; p=json.load\\(sys.stdin\\); print\\(list\\(p.get\\(''dependencies'',{}\\).keys\\(\\)\\)\\)\")",
+      "Bash(node -e \"const p=require\\(''./package.json''\\); console.log\\(JSON.stringify\\(Object.keys\\(p.dependencies\\)\\)\\)\")"
+    ]
+  }
+}

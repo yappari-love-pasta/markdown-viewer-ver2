@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", "Segoe UI", system-ui, sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Markdownコンテンツのスタイル */
+.markdown-body {
+  @apply text-base-content;
+}
+.markdown-body h1 { @apply text-2xl font-bold mt-6 mb-3 text-base-content; }
+.markdown-body h2 { @apply text-xl font-bold mt-5 mb-2 text-base-content; }
+.markdown-body h3 { @apply text-lg font-semibold mt-4 mb-2 text-base-content; }
+.markdown-body p { @apply my-3 leading-relaxed; }
+.markdown-body ul { @apply list-disc list-inside my-3 space-y-1; }
+.markdown-body ol { @apply list-decimal list-inside my-3 space-y-1; }
+.markdown-body code { @apply px-1.5 py-0.5 rounded text-sm font-mono; background-color: #e9e4d4; }
+.markdown-body pre { @apply p-4 rounded-lg overflow-x-auto my-4; background-color: #e9e4d4; }
+.markdown-body pre code { @apply bg-transparent p-0; }
+.markdown-body blockquote { @apply border-l-4 border-primary pl-4 my-4 opacity-75; }
+.markdown-body table { @apply table table-sm w-full my-4; }
+.markdown-body th { background-color: #e9e4d4; color: inherit; }
+/* ダークテーマ上書き */
+[data-theme="dark"] .markdown-body code { background-color: #2b2b2b; }
+[data-theme="dark"] .markdown-body pre  { background-color: #2b2b2b; }
+[data-theme="dark"] .markdown-body th   { background-color: #595857; }
+.markdown-body a { @apply link link-primary; }
+.markdown-body hr { @apply divider my-6; }
+
+/* アップロードモーダル */
+.upload-modal-box                  { background-color: #e7e7eb; }
+[data-theme="dark"] .upload-modal-box { background-color: #2d3e4a; }
+.upload-placeholder::placeholder   { color: #56646a; }
