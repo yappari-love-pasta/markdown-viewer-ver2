@@ -5,20 +5,19 @@
 
 import type { DocumentMeta, TabType } from '../types'
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? '/api'
+const BASE_URL = 'https://guj5firmug.execute-api.ap-northeast-1.amazonaws.com'
 
 // -------------------------------------------------------
 // Basic 認証設定
-// ここに実際の ID / パスワードを設定してください
+// 一時的に無効化（CORS全開テスト用）
 // -------------------------------------------------------
-const BASIC_AUTH_USER = ''     // ← 設定してください
-const BASIC_AUTH_PASSWORD = '' // ← 設定してください
+// const BASIC_AUTH_USER = '60siv66Q7o'     // ← 設定してください
+// const BASIC_AUTH_PASSWORD = 'TBAtPyIxli' // ← 設定してください
 // -------------------------------------------------------
 
 function getAuthHeader(): Record<string, string> {
-  if (!BASIC_AUTH_USER || !BASIC_AUTH_PASSWORD) return {}
-  const token = btoa(`${BASIC_AUTH_USER}:${BASIC_AUTH_PASSWORD}`)
-  return { Authorization: `Basic ${token}` }
+  // Basic認証を無効化
+  return {}
 }
 
 export interface UploadParams {

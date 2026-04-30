@@ -40,7 +40,7 @@ const MainHeader: FC = () => {
             最終更新日：{formatDate(selectedDocument.lastModified)}
           </span>
           <button
-            className="btn btn-outline btn-xs gap-1"
+            className="btn btn-xs gap-1 bg-gradient-to-br from-accent/20 to-accent/10 hover:from-accent/30 hover:to-accent/20 border border-accent/30 hover:border-accent/50 text-accent hover:text-accent transition-all"
             onClick={openEdit}
           >
             <Pencil className="w-3 h-3" />

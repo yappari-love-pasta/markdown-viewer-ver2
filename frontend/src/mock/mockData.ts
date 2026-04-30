@@ -1,47 +1,6 @@
 import type { DocumentMeta } from '../types'
 
-export const MOCK_DOCUMENT_LIST: DocumentMeta[] = [
-  {
-    path: 'uploads/system-architecture.md',
-    title: 'システムアーキテクチャ図',
-    category: '設計',
-    tags: ['AWS', 'Infrastructure', 'Mermaid'],
-    lastModified: '2026-03-27T12:00:00Z',
-    format: 'mermaid',
-  },
-  {
-    path: 'uploads/api-overview.md',
-    title: 'API 設計概要',
-    category: '設計',
-    tags: ['API', 'REST', 'Mermaid'],
-    lastModified: '2026-03-10T11:00:00Z',
-    format: 'mermaid',
-  },
-  {
-    path: 'uploads/onboarding.md',
-    title: 'オンボーディングガイド',
-    category: '運用',
-    tags: ['Guide', 'Beginner'],
-    lastModified: '2026-03-20T09:00:00Z',
-    format: 'markdown',
-  },
-  {
-    path: 'uploads/product-roadmap.md',
-    title: 'プロダクトロードマップ',
-    category: '企画',
-    tags: ['Roadmap', 'Markmap'],
-    lastModified: '2026-03-15T14:30:00Z',
-    format: 'markmap',
-  },
-  {
-    path: 'uploads/kickoff-slide.md',
-    title: 'キックオフスライド',
-    category: '企画',
-    tags: ['Marp', 'Presentation'],
-    lastModified: '2026-03-01T10:00:00Z',
-    format: 'marp',
-  },
-]
+export const MOCK_DOCUMENT_LIST: DocumentMeta[] = []
 
 export const MOCK_CONTENT_MAP: Record<string, string> = {
   'uploads/system-architecture.md': `# システムアーキテクチャ図

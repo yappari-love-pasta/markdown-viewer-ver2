@@ -26,10 +26,10 @@ const DocumentItem: FC<Props> = ({ doc, isActive, onSelect }) => {
   return (
     <li>
       <button
-        className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-left text-sm transition-colors ${
+        className={`w-full flex items-center gap-2 px-3 py-2 rounded-lg text-left text-sm transition-all ${
           isActive
-            ? 'bg-primary text-primary-content'
-            : 'hover:bg-base-300 text-base-content'
+            ? 'bg-gradient-to-br from-emerald-400 to-emerald-600 text-white hover:from-emerald-500 hover:to-emerald-700 shadow-lg'
+            : 'hover:bg-gradient-to-br hover:from-base-300 hover:to-base-200 text-base-content'
         }`}
         onClick={() => onSelect(doc)}
       >
